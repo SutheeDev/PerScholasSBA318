@@ -700,3 +700,5 @@ const users = [
     createdAt: "2025-01-27T01:34:58Z",
   },
 ];
+
+module.exports = users;
