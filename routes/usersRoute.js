@@ -3,7 +3,8 @@ const router = express.Router();
 
 const users = require("../data/users");
 
-router.route("/").get((req, res) => {
-  res.json(users);
+router.get("/", (req, res) => {
+  res.status(200).json(users);
 });
+
 module.exports = router;
