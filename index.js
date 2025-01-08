@@ -4,8 +4,13 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
-  //   res.send("Hello World");
-  throw new Error("test the error middleware");
+  res.send("Hello World");
+  //   throw new Error("test the error middleware");
+});
+
+// Custom 404 middleware
+app.use((req, res) => {
+  res.status(404).send("Page not found");
 });
 
 // Error handling middleware
