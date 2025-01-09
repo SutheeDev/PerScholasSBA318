@@ -898,3 +898,4 @@ const documents = [
     uploadedAt: "2025-01-05T06:43:23Z",
   },
 ];
+module.exports = documents;
