@@ -3,6 +3,7 @@ const app = express();
 
 // Routers
 const usersRoute = require("./routes/usersRoute");
+const jobsRoute = require("./routes/jobsRoute");
 
 const port = process.env.PORT || 5000;
 
@@ -10,6 +11,7 @@ app.use(express.json());
 
 // Use routes here
 app.use("/api/users", usersRoute);
+app.use("/api/jobs", jobsRoute);
 
 app.get("/", (req, res) => {
   res.send("Hello World");

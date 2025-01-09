@@ -800,3 +800,4 @@ const jobs = [
     createdAt: "2025-01-15T08:49:20Z",
   },
 ];
+module.exports = jobs;
