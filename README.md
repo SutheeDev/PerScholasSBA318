@@ -44,6 +44,8 @@ Welcome to SBA318, a Node and Express project developed as part of a Per Scholas
 - **Frontend**: HTML, CSS, JavaScript
 - **Middleware**: Custom 404 and error-handling middleware
 - **API**: RESTful API for interacting with users, jobs, and documents
+- **Axios**: Make HTTP requests from a web browser
+- **Cors**: secure cross-origin requests and data transfers
 
 <br>
 
