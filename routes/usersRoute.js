@@ -14,6 +14,20 @@ router.get("/:id", (req, res, next) => {
   } else next();
 });
 
+router.get("/search", (req, res) => {
+  const { first_name } = req.query;
+
+  let filteredUsers = users;
+
+  if (first_name) {
+    filteredUsers = users.filter((user) =>
+      user.first_name.toLowerCase().includes(first_name.toLowerCase())
+    );
+  }
+
+  res.status(200).json(filteredUsers);
+});
+
 router.post("/", (req, res) => {
   if (!req.body.first_name || !req.body.email) {
     return res.status(400).send("First name and email are required");

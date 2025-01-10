@@ -1,5 +1,3 @@
-const searchNameInput = document.getElementById("searchName");
-const btn = document.querySelector(".search-btn");
 const usersContainer = document.querySelector(".users-container");
 
 const displayUsers = async () => {
@@ -7,7 +5,6 @@ const displayUsers = async () => {
     const response = await axios.get("http://localhost:5000/api/users/");
     const users = response.data;
     users.map((user) => {
-      //   console.log(user.first_name);
       const userEl = document.createElement("div");
       const nameEl = document.createElement("h3");
       const emailEl = document.createElement("p");
