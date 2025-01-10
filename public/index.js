@@ -2,7 +2,7 @@ const userForm = document.getElementById("userForm");
 const nameInput = document.getElementById("name");
 const lastnameInput = document.getElementById("lastname");
 const emailInput = document.getElementById("email");
-const btn = document.querySelector(".btn");
+const btn = document.querySelector(".submit-btn");
 const message = document.querySelector(".message");
 
 nameInput.focus();
@@ -22,7 +22,7 @@ userForm.addEventListener("submit", async (e) => {
   }
 
   try {
-    const response = await axios.post("http://localhost:5000/api/users/", {
+    await axios.post("http://localhost:5000/api/users/", {
       first_name,
       last_name,
       email,
