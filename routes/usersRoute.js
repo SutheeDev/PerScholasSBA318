@@ -15,7 +15,9 @@ router.get("/:id", (req, res, next) => {
 });
 
 router.post("/", (req, res) => {
-  if (req.body.first_name && req.body.email) {
+  if (!req.body.first_name || !req.body.email) {
+    return res.status(400).send("First name and email are required");
+  } else if (req.body.first_name && req.body.email) {
     if (users.find((user) => user.email === req.body.email)) {
       res.status(400).send("This email has already been in use");
     }

@@ -52,3 +52,11 @@ button:hover {
   background-color: #77bfa3;
   color: #ffffff;
 }
+
+.message {
+  width: 550px;
+  margin-top: 40px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
