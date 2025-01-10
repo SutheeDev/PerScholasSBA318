@@ -18,7 +18,8 @@ h1 {
   margin-bottom: 25px;
 }
 
-#userForm {
+#userForm,
+#searchForm {
   width: 550px;
   display: flex;
   flex-direction: column;
@@ -59,4 +60,9 @@ button:hover {
   padding: 15px;
   border-radius: 10px;
   text-align: center;
+}
+
+hr {
+  width: 950px;
+  margin-bottom: 50px;
 }

@@ -1,4 +1,4 @@
-const form = document.getElementById("userForm");
+const userForm = document.getElementById("userForm");
 const nameInput = document.getElementById("name");
 const lastnameInput = document.getElementById("lastname");
 const emailInput = document.getElementById("email");
@@ -7,7 +7,7 @@ const message = document.querySelector(".message");
 
 nameInput.focus();
 
-form.addEventListener("submit", async (e) => {
+userForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const first_name = nameInput.value;
